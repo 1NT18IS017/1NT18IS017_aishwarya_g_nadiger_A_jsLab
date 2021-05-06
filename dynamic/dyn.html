@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>dynamic</title>
+    </head>
+    <body>
+    <h3>DYNAMIC CREATION OF ELEMENT</h3>
+    <button onclick="myFunc()">click here</button>
+    </body>
+    <script>
+        function myFunc()
+        {
+            let d=document.createElement('p');
+            d.innerText="HOW ARE YOU!"
+            document.body.appendChild(d)
+        }
+        </script>
+</html>
