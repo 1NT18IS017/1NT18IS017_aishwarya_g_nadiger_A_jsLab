@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+                body{
+                background-image: url("https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?size=626&ext=jpg");
+                text-align: center;
+list-style-position: inside;
+background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+            }
+            
+        </style>
+    </body>
+<body>
+
+<p>Enter a number</p>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()" style="background-color: green;">Test Input</button>
+<p id="p01"></p>
+<script>
+function myFunction() {
+    var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+    try { 
+      if(isNaN(x)) throw "not a number";
+      if(x < 0)  throw "Negative number";
+      if(x > 0)   throw "Positive number";
+    }
+    catch(err) {
+        message.innerHTML = "Input is " + err;
+    }
+  }
+</script>
+
+</body>
+</html>
