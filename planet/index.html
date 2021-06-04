@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function planet(name, distance){
+            this.name = name;
+            this.distance = distance;
+
+            this.display = function(){
+                document.getElementById("dsp").innerHTML =  `Planet name is ${this.name} and it's distance from sun is ${this.distance} million kms`
+            }
+        }
+        function fun1(){
+            let nwPlanet = new planet("Mercury", "52.816")
+            nwPlanet.display()
+            
+            butn.style.visibility= 'visible';
+            
+            document.getElementById("disp1").innerHTML = ""
+        }
+       
+        function fun2(){
+            let nwPlanet2 = new planet("Venus", "107.78")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'visible';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+        }
+       
+
+        function fun3(){
+            let nwPlanet2 = new planet("Earth", "151.06")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'visible';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+        }
+        
+
+        function fun4(){
+            let nwPlanet2 = new planet("Mars", "247.72")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'visible';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+        }
+        
+
+        function fun5(){
+            let nwPlanet2 = new planet("Jupiter", "756.52")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'visible';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+        }
+        
+
+        function fun6(){
+            let nwPlanet2 = new planet("Saturn", "1488.10")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'visible';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+        }
+        
+        function fun7(){
+            let nwPlanet2 = new planet("Uranus", "")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'visible';
+            document.getElementById("disp1").innerHTML = ""
+        }
+        
+        function fun8(){
+            let nwPlanet2 = new planet("Neptune", "4475.56")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'visible';
+            document.getElementById("disp1").innerHTML = ""
+        }
+        
+        function fun9(){
+            let nwPlanet2 = new planet("pluto", "")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'visible';
+            document.getElementById("disp1").innerHTML = ""
+        }
+        
+    </script>
+    <style>
+ body{
+           background-image: url("https://www.universetoday.com/wp-content/uploads/2014/04/800px-Size_planets_comparison-1280x720.jpg");
+            margin: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 500px;        }
+        button{
+            justify-content: space-around;
+        }
+        #butn2{
+            visibility: hidden;
+        }
+        #butn3{
+            visibility: hidden;
+        }
+        #butn4{
+            visibility: hidden;
+        }
+        #butn5{
+            visibility: hidden;
+        }
+        #butn6{
+            visibility: hidden;
+        }
+        #butn7{
+            visibility: hidden;
+        }
+        #butn8{
+            visibility: hidden;
+        } #butn9{
+            visibility: hidden;
+        }
+        #butn{
+            visibility: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="bo">
+
+    <h1 style="text-align: center;color: bisque;">There are 9 Planets in the solar system</h1>
+    <div style="margin-top: 50px; text-align: center; justify-items: stretch; justify-self: stretch; " class="1">
+        <pre>
+        <button onclick="fun1()">Mercury</button>&nbsp;&nbsp;&nbsp;
+        <br>
+
+        <button onclick="fun2()">Venus</button>&nbsp;&nbsp;&nbsp;
+        <br>
+
+        <button onclick="fun3()">Earth</button>&nbsp;&nbsp;&nbsp;
+        <br>
+
+        <button onclick="fun4()">Mars</button>&nbsp;&nbsp;&nbsp;
+        <br>
+
+        <button onclick="fun5()">Jupiter</button>&nbsp;&nbsp;&nbsp;
+        <br>
+
+        <button onclick="fun6()">Saturn</button>&nbsp;&nbsp;&nbsp;
+        <br>
+
+        <button onclick="fun7()">Uranus</button>&nbsp;&nbsp;&nbsp;
+        <br>
+        
+        <button onclick="fun8()">Neptune</button>&nbsp;&nbsp;&nbsp;
+        <br>
+        
+        <button onclick="fun9()">Pluto</button>&nbsp;&nbsp;&nbsp;
+        <br><br>
+    </pre>
+        <p id="dsp"></p>
+        <img src="" alt="">
+       
+        <p id="disp1"></p>
+    </div>
+</div>
+</body>
+</html>
