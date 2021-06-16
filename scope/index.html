@@ -1,0 +1,35 @@
+// scope
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var plan1 = 'mercury';
+            function init() {
+        var plan2 = 'venus'; 
+        alert("function 1");
+
+        function displayName() { 
+            var plan3 = 'earth';
+          alert("Global variable -> "+ plan1);
+          alert("outer variable -> " + plan2);
+          alert("inner variable -> " + plan3);
+
+        }
+        function displayName1() { 
+            alert("function 2");
+
+          alert("Global variable -> "+ plan1);
+          alert("outer variable -> " + plan2);
+          alert("inner variable -> " + plan3);
+
+
+        }
+        displayName();
+        displayName1();
+
+      }
+      init();
+
+      </script>
+          </body>
+</html>
